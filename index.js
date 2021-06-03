@@ -25,9 +25,7 @@ document.querySelector('#btnGuess').onclick = (e) => {
     } else if (delta < 0) {
         result = template.smaller;
     } else {
-        result = template.exact;
         count++;
-
         let scoreArr = [];
 
         for (let i = 1; i <= count; i++) {
@@ -38,6 +36,7 @@ document.querySelector('#btnGuess').onclick = (e) => {
         <p>Your score ${scoreArr.length}: ${inputNumber}</p>
         `;
 
+        result = template.exact;
     }
 
     document.querySelector('#guessedNumber').innerHTML = guessedNumber;
