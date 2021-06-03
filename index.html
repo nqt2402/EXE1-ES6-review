@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>EXE 1</title>
+</head>
+
+<body>
+
+    <div class="container text-center">
+        <h3>EXE 1:</h3>
+        <div class="row">
+            <div class="col-12">
+                <button class="btn btn-info text-white" id="resetHistory">Reset</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="userInput col-3">
+                <h5>Your Number: </h5>
+                <input type="text" id="inputNumber">
+                <button class="btn btn-success" id="btnGuess">Guess</button>
+            </div>
+
+            <div class="showGuessedNumber col-3">
+                <h5>Guessed Number: </h5>
+                <div id="guessedNumber"></div>
+            </div>
+
+            <div class="result col-3">
+                <h5>Result: </h5>
+                <div id="result"></div>
+            </div>
+
+            <div class="history col-3">
+                <div class="row">
+                    <div class="col-6">
+                        <h5>Your history: </h5>
+                        <div id="historyResult"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
